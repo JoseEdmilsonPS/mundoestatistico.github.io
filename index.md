@@ -1,6 +1,6 @@
 ## Bem vindo ao Mundo Estatístico
 
-### Quem Somos
+### Quem Somos TESTE
 Somos uma plataforma desenvolvida pelos alunos do curso de Bacharelado em Estatística da Universidade Brasil - Unicapital. Apaixonados por informações e análises dos dados, iniciamos nossas atividades de estudos e análises estatísticas, no ano de 2017.
 
 ### Missão
