@@ -100,7 +100,7 @@ nav#menu ul {
 	text-transform: uppercase;
 	position: absolute;
 	top: -20px;
-	left: 750px;
+	left: 400px;
 }
 
 nav#menu li {
@@ -133,7 +133,7 @@ nav#menu a:hover {
 
 section#corpo {
 	display: block;
-	width: 535px;
+	width: 515px;
 	float: left;
 	border-right: 1px solid #606060;
 	padding-right: 15px;*/
