@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* formatação do titulo "h1"*/
+h1{
+			font-family: Arial;
+			font-size: 30pt;
+			color: green;
+			text-shadow: 2px 2px 2px black;		/*Sombra no título*/
+		}
+
+/* formatação da cor da pagina*/
+body{
+	background-color: white;
+	color: rgba(0,0,0,1)
+}
+
+/* formatação do paragrafo*/
+p{ 
+	text-align: justify:
+	text-indent: 50px;
+}
+
+/* formatação do imagem com legenda*/
+figure.foto-legenda {
+	position: relative;
+	border: 5px solide blue;
+	box-shadow: 1px 1px 1px 4px black;		
+}
+
+figure.foto-legenda img {
+	widht: 100%;
+	height: 100%;
+}
+
+/* formatação do legenda dentro da imagem*/
+
+figure.foto-legenda figcaption{
+	opacity:0;
+	position: absolute;
+	top: 0px;
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+	height:100%;
+	width:100%;
+	padding:10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+/* formatação apresentar legenda ao passar o mouse*/
+figure.foto-legenda:hover figcaption{
+	opacity:1;
+}
+
+/*Formatação do menu*/
+
+nav#menu {
+    display: block; /*faz menu flutuante */
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute; /* bloco fluatua por toda pagina */
+    top: 60px;
+    left: 380px;
+}
+
+nav#menu li{
+    display: inline-block; /* coloca o menu em linha */
+    background-color: #dddddd; /*cor no fundo do texto, cinza */
+    padding: 10px;  /* expaço dentro do caixa "menu */
+    margin: 2px;
+    transition: background-color 1s; /* 1 segundo pra mudar a cor*/
+}
+
+nav#menu li:hover{
+    background-color: #606060; /*mudar a cor do menu ao passar o mouse*/
+}
+
+nav#menu h1{
+    display: none; /*esconde o "menu principal*/
+}
+
+/*configurando os links do menu ao passar o mouse*/
+nav#menu a {
+    color: #000000; 
+    text-decoration: none; /* sem sublinhar o texto*/
+}
+
+nav#menu a:hover {
+    color: #ffff;
+}
