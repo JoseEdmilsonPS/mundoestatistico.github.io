@@ -34,7 +34,7 @@ a:hover {
 header#cabecalho img#icone {
 	position: absolute;
 	left: 850px;
-	top: -7px;
+	top: -4px;
 }
 
 header#cabecalho {
@@ -58,8 +58,8 @@ header#cabecalho h2 {
 	color: #888888;
 	font-size: 15pt;
 	padding: 0px;
-	margin-top: 0px;
-	left: 300px;
+	margin-top: 70px;
+	right: 700px;
 }
 /* Formatação de imagens com legendas */
 
