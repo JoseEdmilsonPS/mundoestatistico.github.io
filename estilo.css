@@ -33,14 +33,14 @@ a:hover {
 
 header#cabecalho img#icone {
 	position: absolute;
-	left: 820px;
-	top: 100px;
+	left: 870px;
+	top: 70px;
 }
 
 header#cabecalho {
 	border-bottom: 1px #606060 solid;
 	height: 150px;
-	background: url(logoME50.jpg) no-repeat 0px 80px;
+	background: url(logoME100.jpg) no-repeat 0px 80px;
 
 }
 
