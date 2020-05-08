@@ -33,14 +33,14 @@ a:hover {
 
 header#cabecalho img#icone {
 	position: absolute;
-	left: 900px;
-	top: -10px;
+	left: 880px;
+	top: -7px;
 }
 
 header#cabecalho {
 	border-bottom: 1px #606060 solid;
 	height: 150px;
-	background: url(logoME100.jpg) no-repeat 0px 80px;
+	background: url(logoME100.jpg) no-repeat 0px 60px;
 
 }
 
@@ -58,7 +58,7 @@ header#cabecalho h2 {
 	color: #888888;
 	font-size: 15pt;
 	padding: 0px;
-	margin-top: 30px;
+	margin-top: 70px;
 	left: 300px;
 }
 /* Formatação de imagens com legendas */
