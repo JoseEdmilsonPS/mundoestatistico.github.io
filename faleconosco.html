@@ -39,7 +39,7 @@
 					<input type="email" name="email" id="email" size="20" maxlength="40"/>
 					</p>
 				<fieldset  class = "field radiobox">
-					<legend>Sexo</legend>
+					<span>Sexo</span>
 					<input type="radio" name="sexo" id="masc" checked/><label for="masc">Masculino</label></br>
 				        <input type="radio" name="sexo" id="fem"/> <label for="fem">Feminino</label>
 				</fieldset>
@@ -47,17 +47,13 @@
 					<legend>Mensagem do Usuário</legend>
 					<p><label for="urg">Grau de Urgência:</label>
 						Mín<input type="range" name="urg" id="urg" min="0" max="10" step="2"/>Máx</p>
-					p><label for="msg">Mensagem:</label>
+					<p><label for="msg">Mensagem:</label>
 					<textarea name="msg" id="msg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
 				</fieldset>
 			</fieldset>
 			<input type="submit" name="acao" value="enviar">
 		       	<!--<input type="image" name="tEnviar"src="_imagens/botao-enviar.png"/>-->
 		 </form>
-	<figure class="foto-legenda">
-		<img src="mundo2.jpg"> <!-- colaca imagem no corpo do pagina -->
-		<figcaption> Estatística descomplicada</figcaption> <!--Legenda-->
-	</figure>
 	<nav id="menu"><!-- Cria menu de navegação-->
 		<h1>Menu Principal</h1> 
 		<ul type = "disc">
@@ -88,28 +84,18 @@
         $email=$_POST["email"];
         $sexo=$_POST["sexo"];
         $msg=$_POST["mensagem"];
-    }
-?>
-<!--
-<?php
-    if (isset($_POST["acao"])){
-        $nome=$_POST["nome"];
-        $telefone=$_POST["telefone"];
-        $email=$_POST["email"];
-        $radio=$_POST["novidades"];
-        $msg=$_POST["mensagem"];
  
         echo "<p>Olá, ".$nome."</p>";
         echo "<p>Seu email é: ".$email."</p>";
-        echo "<p>Seu telefone é: ".$telefone."</p>";
-        if ($radio=="sim"){
-            echo "<p>Você escolheu receber nossas novidades</p>";
-        }elseif ($radio=="nao") {
-            echo "<p>Você escolheu NÃO receber nossas novidades</p>";
+     
+     if ($radio=="masc"){
+            echo "<p>Você é do sexo masculino</p>";
+        }elseif ($radio=="fem") {
+            echo "<p>Você é do sexo feminino</p>";
         }
         echo "<p>Sua mensagem é:<br/>".$msg."</p>";
     }
-?>-->
+?>
 </body>
 </html>
 
