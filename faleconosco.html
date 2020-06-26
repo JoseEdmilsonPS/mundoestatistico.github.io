@@ -19,7 +19,7 @@
         <img id = "icone" src="analytics2.jpg"/>
      </header> <!-- Termino da divisão cabecalho -->
 </aside>
-<section id="corpo">
+<section id="corpoconosco">
 	<article id="noticia-principal">
 		<header id="cabecalho-article">
 			<hgroup> <!-- Cria um grupo de títulos abaixo do cabecalho -->
@@ -29,7 +29,7 @@
 				<h3 class="direita">Atualizado em Maio de 2020</h3>
 			</hgroup>
 		</header>
-		<form method="POST" id="fContato" oninput"calc_total()">
+		<form method="POST" id="fContato" >
 			<fieldset id="usuario">
 				<legend>Identificação do Usuário</legend>
 				<p><label for="cNome">Nome:</label>
@@ -38,6 +38,7 @@
 				<p><lable>E-mail:</label>
 					<input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"/>
 					</p>
+				 pattern="[A-Za-z]{@}[A-Za-z]" title="email valido">
 				<fieldset id="sexo">
 					<legend>Sexo</legend>
 					<input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label></br>
@@ -51,7 +52,8 @@
 					<textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
 				</fieldset>
 			</fieldset>
-		       <input type="image" name="tEnviar"src="_imagens/botao-enviar.png"/>
+			<input type="submit" name="acao" value="Enviar">
+		       	<input type="image" name="tEnviar"src="_imagens/botao-enviar.png"/>
 		 </form>
 	<figure class="foto-legenda">
 		<img src="mundo2.jpg"> <!-- colaca imagem no corpo do pagina -->
@@ -76,6 +78,20 @@
 <footer id="rodape"><p>Copyright &copy; 2020 - by JEP (José Edmilson Pereira) <br> 
    <a href="http:/_imagem">Facebook</a> | <a href="http:/../_interfac"></a>Linkedin </p></footer>
 </div> 
+<?php
+    if (isset($_POST["acao"])){
+    echo "<script>alert('Formulário Foi enviado pelo método POST')</script>";
+    }
+?>
+<?php
+    if (isset($_POST["acao"])){
+        $nome=$_POST["nome"];
+        $telefone=$_POST["telefone"];
+        $email=$_POST["email"];
+        $radio=$_POST["novidades"];
+        $msg=$_POST["mensagem"];
+    }
+?>
 </body>
 </html>
 
