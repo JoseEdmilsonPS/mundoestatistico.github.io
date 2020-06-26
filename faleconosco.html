@@ -29,27 +29,33 @@
 				<h3 class="direita">Atualizado em Maio de 2020</h3>
 			</hgroup>
 		</header>
-		<form class = "formulario" method="POST">
-			<fieldset class = "field">
+		<form class="formulario" method="post"> 
+			<fieldset id="usuario">
 				<legend>Identificação do Usuário</legend>
-				<p><label for="nome">Nome:</label>
-					<input type="text" name="nome" id="nome" size="20" maxlength="30"placeholder="Nome Completo"/>
-				</p>
-				<p><lable>E-mail:</label>
-					<input type="email" name="email" id="email" size="20" maxlength="40"/>
-					</p>
-				<fieldset  class = "field radiobox">
-					<span>Sexo</span>
-					<input type="radio" name="sexo" id="masc" checked/><label for="masc">Masculino</label></br>
-				        <input type="radio" name="sexo" id="fem"/> <label for="fem">Feminino</label>
-				</fieldset>
-				<fieldset  class = "field">
-					<legend>Mensagem do Usuário</legend>
-					<p><label for="urg">Grau de Urgência:</label>
-						Mín<input type="range" name="urg" id="urg" min="0" max="10" step="2"/>Máx</p>
-					<p><label for="msg">Mensagem:</label>
-					<textarea name="msg" id="msg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
-				</fieldset>
+			<p> Envie uma mensagem preenchendo o formulário abaixo</p>
+			<div class="field">
+				<label for="nome">Seu Nome:</label>
+				<input type="text" id="nome" name="nome"  size="20" maxlength="30" placeholder="Digite seu nome*" required>
+			</div>
+			<div class="field">
+			    <label for="telefone">Seu Telefone:</label>
+			    <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+			</div>
+			<div class="field">
+			    <label for="email">Seu E-Mail:</label>
+			    <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+			</div>        
+			<div class="field radiobox">
+			    <span>Deseja receber nossas novidades?</span>
+			    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+			    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+			</div>
+			<div class="field">
+			    <label for="mensagem">Sua mensagem:</label>
+			    <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+			</div>
+
+			<input type="submit" name="acao" value="Enviar">
 			</fieldset>
 			<input type="submit" name="acao" value="enviar">
 		       	<!--<input type="image" name="tEnviar"src="_imagens/botao-enviar.png"/>-->
