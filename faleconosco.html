@@ -1,95 +1,81 @@
-<!DOCTYPE html><!DOCTYPE HTML>
+  <!DOCTYPE html>
 <html lang= pt-br>
 <head> <!-- define as caracteristicas/padrão do site -->
 	<meta charset= "UTF-8"/>
 	<title>Mundo Estatístico</title>	
-	<style>
-        h1{
-		 	font-family: Arial;
-		 	font-size: 30pt;
-		    color: blue;
-		 	text-shadow: 2px 2px 2px rgb(155, 248, 16);	 	
-		 }
-		
-		p {
-			style= text-align: justify;
-			text-indent: 50px;
-		}
-	</style>
-	<link rel="stylesheet" type="textt/css" href="_css/style.css"/>
-	
-	</head>
-	
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+<script language=javascript src="_javascript/funcoes.js"></script>
 
 <body>
 <div id= "interface"> <!-- Cria uma divisão -->
-	<header id:"cabecalho">	<!-- Cria o cabecalho da pagina  -->
-		<hgroup><!-- cria um grupo de titulos  -->
-			<h1 style= "text-align: center";>MUNDO ESTATÍSTICO</h1>
-			<h2 style= "text-align: center";>Estatística Descomplicada </h2>
-		</hgroup>
-		<button>Home</button>
-		<button>Home</button>
-		<button>Sobre Nós</button>
-		<button>Estatística</button>
-		<button>Fale conosco</button>
-
-		<figure class="foto-legenda">
-			<img src="_imagem/mundo2.jpg"> <!-- colaca imagem no corpo do pagina -->
-			<figcaption> Estatística descomplicada</figcaption>
-		</figure>
-		<ol>Menu Principal
-			- Home
-			- Sobre nós
-			- Estatística
-			- Fale conosco
-	   	 </ol>
-	</header><!-- Termino da divisão cabecalho -->
-	<hgroup> <!-- Cria um grupo de títulos abaixo do cabecalho -->
-		<h2>Descubra a estatística de uma forma simples e descomplicada</h2>
-	   	<h3>Estatística > Ciência de Dados</h3>
-	    	<h2>por JeP - José Edmilson Pereira</h2>
-	    	<h3>Atualizado em Março de 2020</h3>
-	</hgroup>
-	        <section id="corpo-full">
-            <article id="noticia-principal">
-                <header id="cabecalho-artigo">
-                    <h3>Fale Conosco > Contato</h3>
-                    <h1>Formulário de Contato</h1>
-                    <h2>por José Edmilson Pereira</h2>
-                    <h3 class="direita">Atualizado em Junho de 2020</h3>
-                </header>
-            </article>
-        </section>
-
-
-        <form method="POST" id="fContato" oninput"calc_total()">
-            <fieldset id="usuario">
-                <legend>Identificação do Usuário</legend>
-                    <p><label for="cNome">Nome:</label>
-                        <input type="text" name="tNome" id="cNome" size="20" maxlength="30"placeholder="Nome Completo"/>
-		    </p>
-		    <p><lable>E-mail:</label>
-                        <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"/>
-		    </p>
-		<fieldset id="sexo">
-			<legend>Sexo</legend>
-			<input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label></br>
-                        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
-                </fieldset>
-		<fieldset id="mensagem">
-			<legend>Mensagem do Usuário</legend>
-			<p><label for="cUrg">Grau de Urgência:</label>
-				Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
-			<p><label for="cMsg">Mensagem:</label>
-                	<textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
-		</fieldset>
-                <input type="image" name="tEnviar"src="_imagens/botao-enviar.png"/>
-	 </form>
-
-
-
-
+<aside id="cabecalho">
+    <header id="cabecalho">	<!-- Cria o cabecalho da pagina  -->
+        <hgroup><!-- cria um grupo de titulos  -->
+            <h1 style= "text-align: left";>MUNDO ESTATÍSTICO</h1>
+            <h2 style= "text-align: left";>Estatística Descomplicada </h2>
+        </hgroup>
+        <!--Figura do cabecalho-->
+        <img id = "icone" src="analytics2.jpg"/>
+     </header> <!-- Termino da divisão cabecalho -->
+</aside>
+<section id="corpo">
+	<article id="noticia-principal">
+		<header id="cabecalho-article">
+			<hgroup> <!-- Cria um grupo de títulos abaixo do cabecalho -->
+				<h3>Estatística >> Ciência de Dados</h3>
+				<h1>Estatística simples e descomplicada</h1>
+				<h2>Por JEP - José Edmilson Pereira</h2>
+				<h3 class="direita">Atualizado em Maio de 2020</h3>
+			</hgroup>
+		</header>
+		<form method="POST" id="fContato" oninput"calc_total()">
+			<fieldset id="usuario">
+				<legend>Identificação do Usuário</legend>
+				<p><label for="cNome">Nome:</label>
+					<input type="text" name="tNome" id="cNome" size="20" maxlength="30"placeholder="Nome Completo"/>
+				</p>
+				<p><lable>E-mail:</label>
+					<input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"/>
+					</p>
+				<fieldset id="sexo">
+					<legend>Sexo</legend>
+					<input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label></br>
+				        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+				</fieldset>
+				<fieldset id="mensagem">
+					<legend>Mensagem do Usuário</legend>
+					<p><label for="cUrg">Grau de Urgência:</label>
+						Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+					p><label for="cMsg">Mensagem:</label>
+					<textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+				</fieldset>
+			</fieldset>
+		       <input type="image" name="tEnviar"src="_imagens/botao-enviar.png"/>
+		 </form>
+	<figure class="foto-legenda">
+		<img src="mundo2.jpg"> <!-- colaca imagem no corpo do pagina -->
+		<figcaption> Estatística descomplicada</figcaption> <!--Legenda-->
+	</figure>
+	<nav id="menu"><!-- Cria menu de navegação-->
+		<h1>Menu Principal</h1> 
+		<ul type = "disc">
+			<li onmouseover="mudafoto('_imagem/home.png')" onmouseout="mudafoto('_imagem/normal.jpeg')" > <a href="index.html">Home</a></li>  
+			<li onmouseover="mudafoto('_imagem/figura1.webp')" onmouseout="mudafoto('_imagem/normal.jpeg')"> <a href="about.html">Sobre nós</a></li>
+			<!--<li onmouseover="mudafoto('_imagem/estat.jpeg')" onmouseout="mudafoto('_imagem/normal.jpeg')"> <a href="programar.html">Programação</a> </li>-->
+			<li onmouseover="mudafoto('_imagem/multimidia.png')" onmouseout="mudafoto('_imagem/normal.jpeg')"> <a href="econometria.html">Estatística</a></li>
+			<li onmouseover="mudafoto('_imagem/contato.png')" onmouseout="mudafoto('_imagem/normal.jpeg')"> <a href="faleconosco.html">Fale conosco</a></li>
+		    </ul>
+	 </nav>
+	<button><a href="http:mundoestatistico.github.io" target="_blank">Home</a></button>
+	<button>Sobre Nós</button>
+	<button>Estatística</button>
+	<button>Fale conosco</button>
+    </article>
+</section>
+<footer id="rodape"><p>Copyright &copy; 2020 - by JEP (José Edmilson Pereira) <br> 
+   <a href="http:/_imagem">Facebook</a> | <a href="http:/../_interfac"></a>Linkedin </p></footer>
+</div> 
 </body>
 </html>
 
